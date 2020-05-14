@@ -1,7 +1,9 @@
 **KOMANDE**
 //git init -> inicijaliziramo git
-//git add -> proslijedimo sa untracked files u staged changes 
+//git add . ili <filename>-> proslijedimo sa untracked files u staged changes. . dodamo sve fajlove, <filename> odredjeni file ili folder
 //git status -> ispisuje trenutni status setup-a
+//git rm --cached -r <filename> -> unstage odredjeni file
+//git commit -m "poruka" -> da commitamo fajlove
 
 - .gitignore file u kojem definisemo koje fajlove git da ne prati
 - kad napravimo promjene na fajlu koji git vec prati, git ih automatski oznaci kao Unstaged Changes
@@ -12,7 +14,7 @@
 --STAGED CHANGES - fajlovi koji ce biti commitani
 --COMMITS - savepoints koje smo uploadovali na git
 
-
+M -> znaci da imamo promjene na fajlu koje git vec prati
 
 
 Modifying PATH on Windows 10:
