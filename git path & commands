@@ -14,7 +14,7 @@
 --STAGED CHANGES - fajlovi koji ce biti commitani
 --COMMITS - savepoints koje smo uploadovali na git
 
-M -> znaci da imamo promjene na fajlu koje git vec prati
+M -> znaci da imamo promjene na fajlu koje git vec prati.
 
 
 Modifying PATH on Windows 10:
