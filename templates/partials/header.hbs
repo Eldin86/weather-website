@@ -1,0 +1,16 @@
+ <header>
+     <h1>{{title}}</h1>
+{{!-- 
+iz svakog page-a uzima title, ako smo na help strani uima title property it tog objekta
+app.get('/help', (req, res) => {
+    res.render('help', {
+        message: 'This is help message',
+        title: 'Help',
+        name: 'Eldin Maslesa'
+    })
+})
+ --}}
+     <a href="/">Weather</a>
+     <a href="/about">About</a>
+     <a href="/help">Help</a>
+ </header>

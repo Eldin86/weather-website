@@ -1,0 +1,34 @@
+**KOMANDE**
+//git init -> inicijaliziramo git
+//git add -> proslijedimo sa untracked files u staged changes 
+//git status -> ispisuje trenutni status setup-a
+
+- .gitignore file u kojem definisemo koje fajlove git da ne prati
+- kad napravimo promjene na fajlu koji git vec prati, git ih automatski oznaci kao Unstaged Changes
+- da bismo dohvatili odredjeni commit, to radimo pomocu 'sifrovanih' brojeva i slova
+
+--UNTRACKED FILES - novi fajlovi dodani u projekat
+--UNSTAGED CHANGES - fajlovi koje git vec prati
+--STAGED CHANGES - fajlovi koji ce biti commitani
+--COMMITS - savepoints koje smo uploadovali na git
+
+
+
+
+Modifying PATH on Windows 10:
+
+In the Start Menu or taskbar search, search for "environment variable".
+Select "Edit the system environment variables".
+Click the "Environment Variables" button at the bottom.
+Double-click the "Path" entry under "System variables".
+With the "New" button in the PATH editor, add C:\Program Files\Git\bin\ and C:\Program Files\Git\cmd\ to the end of the list.
+Close and re-open your console.
+Modifying PATH on Windows 7:
+
+Right-click "Computer" on the Desktop or Start Menu.
+Select "Properties".
+On the very far left, click the "Advanced system settings" link.
+Click the "Environment Variables" button at the bottom.
+Double-click the "Path" entry under "System variables".
+At the end of "Variable value", insert a ; if there is not already one, and then C:\Program Files\Git\bin\;C:\Program Files\Git\cmd\. Do not put a space between ; and the entry.
+Close and re-open your console.

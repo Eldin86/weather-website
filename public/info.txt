@@ -1,0 +1,1 @@
+sve sto je ovdje bit ce servirano kao dio exporess servera, ovdje moze biti slike, html, css. javascript i td. staticni dio
