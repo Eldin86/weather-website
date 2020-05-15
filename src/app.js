@@ -7,6 +7,9 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+//spremamo port iz env varijable, ili defaultno 3000 za localhost ako nema env varijable
+const port = process.env.PORT || 3000
+
 const publicDirectoyPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
@@ -113,6 +116,6 @@ app.get('*', (req, res) => {
 
 
 //startamo server, tako sto proslijedimo port, drugi argument je funkcija koja se aktivira kad je server aktivan
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
 })

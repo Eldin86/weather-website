@@ -4,6 +4,27 @@
 //git status -> ispisuje trenutni status setup-a
 //git rm --cached -r <filename> -> unstage odredjeni file
 //git commit -m "poruka" -> da commitamo fajlove
+** *** *** KREIRANJE SSH KEYS
+//ls -a -l ~/.ssh -> (ls) izlistavamo listu fajlova i foldera unutar odredjenog foldera,
+            (-a) cak i skriveni fajlovi ce biti izlistani
+            (-l) da formatiramo ispis, radi lakseg citanja
+//ssh-keygen -t rsa -b 4096 -C "maslesaeldin@gmail.com" -> dozvoljava nam da generisemo ssh key
+            (-t) - tip protokola 
+            (rsa) - protokol
+            (-b) - odredimo koliko bitova za ovaj key zelimo da bude siguran obicno je 4096
+            (4095) - broj bitova
+            (-C) - Komentar za key, odnosno label
+** *** *** 
+//git remote add origin 'url' -> smjestimo kanal preko kojeg ce komunicirati, odnosno spremimo podatke da ih mozemo kasnije koristiti
+            (remote) - verzija projekta koja je hostovana negdje drugo
+            (add) - kako radimo sa remote-ima, add da ih dodamo, remove da ih izbrisemo.
+            (origin) - naziv za remote, defaultno prvi remote ima origin naziv
+            (url) - url sa rapository na koji pushamo
+//git push -u origin master -> saljemo fajlove u rapository
+            (push) - dozvoljava nam da pushamo commite na odrdjeni remote
+            (origin) - naziv 
+            (master) - branch u gitu
+            (-u) - defaultno postavljamo origin, tako da sljedecim pushom mozemo koristiti samo git push
 
 - .gitignore file u kojem definisemo koje fajlove git da ne prati
 - kad napravimo promjene na fajlu koji git vec prati, git ih automatski oznaci kao Unstaged Changes
