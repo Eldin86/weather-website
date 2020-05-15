@@ -1,11 +1,11 @@
-console.log('Client side javascript file is loaded')
+//yconsole.log('Client side javascript file is loaded')
 
-fetch('http://puzzle.mead.io/puzzle')
-    .then(res => {
-        return res.json().then((res) => {
-            console.log(res)
-        })
-    })
+// fetch('ht    tp:  //puzzle    .mead  .io   /puzzle   ')
+//     .then(res => {
+//         return res.json().then((res) => {
+//             console.log(res)
+//         })
+//     })
 
 //Assignment
 //Goal: fetch weather!
@@ -15,18 +15,18 @@ fetch('http://puzzle.mead.io/puzzle')
 // - If error property print error,
 // - If no error property, print location and forecast
 //4. Refresh browser and test your work
-fetch('http://localhost:3000/weather?address=Mostar')
-    .then(res => {
-        return res.json().then(res => {
-            //error je custom error koji smo mi kreirali ukoliko je nepostojeci unos ili unos nije pronadjen
-            if (res.error) {
-                console.log(res.error)
-            } else {
-                console.log(res.location)
-                console.log(res.forecast)
-            }
-        })
-    })
+// fetch('http://localhost:3000/weather?address=Mostar')
+//     .then(res => {
+//         return res.json().then(res => {
+//             //error je custom error koji smo mi kreirali ukoliko je nepostojeci unos ili unos nije pronadjen
+//             if (res.error) {
+//                 console.log(res.error)
+//             } else {
+//                 console.log(res.location)
+//                 console.log(res.forecast)
+//             }
+//         })
+//     })
 
 const weatherFrom = document.querySelector('.form')
 const search = document.querySelector('input')
@@ -54,7 +54,7 @@ weatherFrom.addEventListener('submit', (e) => {
     //1. Migrate fetch call into the submit callback
     //2. Use the search text as the address query string value
     //3. Submit the form with a valid and invalid value to test
-    fetch(`http://localhost:3000/weather?address=${location}`)
+    fetch(`/weather?address=${location}`)
     .then(res => {
         return res.json().then(res => {
             //error je custom error koji smo mi kreirali ukoliko je nepostojeci unos ili unos nije pronadjen
